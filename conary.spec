@@ -1,14 +1,18 @@
+#
+# TODO: FHS: don't package binaries in /usr/share!!!
+#
 Summary:	Distributed software management system for Linux distributions
+Summary(pl):	Rozproszony system zarz±dzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
 Version:	0.9.0
-Release:	1
+Release:	0.1
 License:	CPL 1.0
 Group:		Applications/System
 Source0:	ftp://download.specifixinc.com/pub/conary/%{name}-%{version}.tar.bz2
 # Source0-md5:	011f2410365102b56fc79369cccccbf1
 URL:		http://wiki.specifixinc.com/
-BuildRequires:	rpm-pythonprov
 BuildRequires:	python-devel
+BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite-devel >= 3.0.0
 Requires:	python-devel-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -23,6 +27,18 @@ a Linux system. Rather then having a full distribution come from a
 single vendor, it allows administrators and developers to branch a
 distribution, keeping the pieces which fit their environment while
 grabbing components from other repositories across the Internet.
+
+%description -l pl
+Conary to rozproszony system zarz±dzania oprogramowaniem dla
+dystrybucji Linuksa. Zastêpuje tradycyjne rozwi±zania zarz±dzania
+pakietami (takie jak RPM czy dpkg) jednym, zaprojektowanym aby
+umo¿liwiæ lu¼n± wspó³pracê poprzez Internet. Umo¿liwia zbiorom
+rozproszonych i lu¼no powi±zanych repozytoriów na definiowanie
+komponentów, które s± instalowane w systemie linuksowym. Zamiast
+posiadania pe³nej dystrybucji pochodz±cej od jednego producenta,
+pozwala administratorom i deweloperom na odga³êzienie dystrybucji,
+trzymanie kawa³ków pasuj±cych do ich ¶rodowiska i wyci±ganie
+komponentów ¿ innych repozytoriów z Internetu.
 
 %prep
 %setup -q
