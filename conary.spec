@@ -10,6 +10,7 @@ URL:		http://wiki.specifixinc.com/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	python-devel
 BuildRequires:	sqlite-devel >= 3.0.0
+Requires:	python-devel-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
