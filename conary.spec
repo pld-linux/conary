@@ -1,6 +1,4 @@
 #
-# TODO: FHS: don't package binaries in /usr/share!!!
-#
 Summary:	Distributed software management system for Linux distributions
 Summary(pl):	Rozproszony system zarz±dzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
@@ -11,12 +9,13 @@ Group:		Applications/System
 Source0:	ftp://download.specifixinc.com/pub/conary/%{name}-%{version}.tar.bz2
 # Source0-md5:	47bf12eb0c162db751ce95efe405fa56
 URL:		http://wiki.specifixinc.com/
-BuildRequires:	FHS-fixes(see TODO)
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite-devel >= 3.0.0
 Requires:	python-devel-tools
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+%define		_datadir	%{_libdir}
 
 %description
 Conary is a distributed software management system for Linux
@@ -47,14 +46,16 @@ komponentów ¿ innych repozytoriów z Internetu.
 %build
 %{__make} \
 	CC="%{__cc}" \
-	PYTHON=%{_bindir}/python
+	PYTHON=%{_bindir}/python \
+	conarydir=%{_datadir}/%{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	PYTHON=%{_bindir}/python
+	PYTHON=%{_bindir}/python \
+	conarydir=%{_datadir}/%{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
