@@ -11,6 +11,7 @@ Group:		Applications/System
 Source0:	ftp://download.specifixinc.com/pub/conary/%{name}-%{version}.tar.bz2
 # Source0-md5:	6edbf109da8c6db8f2f8e8a7aac86c8e
 URL:		http://wiki.specifixinc.com/
+BuildRequires:	FHS-fixes(see TODO)
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	sqlite-devel >= 3.0.0
