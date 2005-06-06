@@ -1,12 +1,12 @@
 Summary:	Distributed software management system for Linux distributions
 Summary(pl):	Rozproszony system zarz±dzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
-Version:	0.60.2
+Version:	0.60.4
 Release:	0.1
 License:	CPL 1.0
 Group:		Applications/System
 Source0:	ftp://download.specifixinc.com/pub/conary/%{name}-%{version}.tar.bz2
-# Source0-md5:	450c8336c7986efa0d87b10b9bfe9995
+# Source0-md5:	c83baac9f7430e3652d90aebb29143c8
 URL:		http://wiki.specifixinc.com/
 BuildRequires:	python-devel
 BuildRequires:	sqlite3-devel >= 3.0.0
