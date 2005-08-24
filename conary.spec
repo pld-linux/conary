@@ -7,7 +7,7 @@ License:	CPL 1.0
 Group:		Applications/System
 Source0:	ftp://download.rpath.com/pub/conary/%{name}-%{version}.tar.bz2
 # Source0-md5:	2779696b7c6b24d5dc07c348e7743dfb
-URL:		http://wiki.specifixinc.com/
+URL:		http://wiki.conary.com/
 BuildRequires:	kidc
 BuildRequires:	python-devel
 BuildRequires:	sqlite3-devel >= 3.0.0
