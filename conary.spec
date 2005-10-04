@@ -1,12 +1,12 @@
 Summary:	Distributed software management system for Linux distributions
 Summary(pl):	Rozproszony system zarz±dzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
-Version:	0.62.10
+Version:	0.62.12
 Release:	0.1
 License:	CPL 1.0
 Group:		Applications/System
 Source0:	ftp://download.rpath.com/pub/conary/%{name}-%{version}.tar.bz2
-# Source0-md5:	f0a7a3c2a81cb22ff7d6c6434614b4d5
+# Source0-md5:	d0f689cffb9240f497d4f6d1915d0a71
 URL:		http://wiki.conary.com/
 BuildRequires:	python-kid
 BuildRequires:	python-devel
