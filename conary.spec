@@ -1,5 +1,5 @@
 Summary:	Distributed software management system for Linux distributions
-Summary(pl):	Rozproszony system zarz±dzania oprogramowaniem dla dystrybucji Linuksa
+Summary(pl.UTF-8):   Rozproszony system zarzÄ…dzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
 Version:	0.62.14
 Release:	0.1
@@ -27,17 +27,17 @@ single vendor, it allows administrators and developers to branch a
 distribution, keeping the pieces which fit their environment while
 grabbing components from other repositories across the Internet.
 
-%description -l pl
-Conary to rozproszony system zarz±dzania oprogramowaniem dla
-dystrybucji Linuksa. Zastêpuje tradycyjne rozwi±zania zarz±dzania
+%description -l pl.UTF-8
+Conary to rozproszony system zarzÄ…dzania oprogramowaniem dla
+dystrybucji Linuksa. ZastÄ™puje tradycyjne rozwiÄ…zania zarzÄ…dzania
 pakietami (takie jak RPM czy dpkg) jednym, zaprojektowanym aby
-umo¿liwiæ lu¼n± wspó³pracê poprzez Internet. Umo¿liwia zbiorom
-rozproszonych i lu¼no powi±zanych repozytoriów na definiowanie
-komponentów, które s± instalowane w systemie linuksowym. Zamiast
-posiadania pe³nej dystrybucji pochodz±cej od jednego producenta,
-pozwala administratorom i deweloperom na odga³êzienie dystrybucji,
-trzymanie kawa³ków pasuj±cych do ich ¶rodowiska i wyci±ganie
-komponentów ¿ innych repozytoriów z Internetu.
+umoÅ¼liwiÄ‡ luÅºnÄ… wspÃ³Å‚pracÄ™ poprzez Internet. UmoÅ¼liwia zbiorom
+rozproszonych i luÅºno powiÄ…zanych repozytoriÃ³w na definiowanie
+komponentÃ³w, ktÃ³re sÄ… instalowane w systemie linuksowym. Zamiast
+posiadania peÅ‚nej dystrybucji pochodzÄ…cej od jednego producenta,
+pozwala administratorom i deweloperom na odgaÅ‚Ä™zienie dystrybucji,
+trzymanie kawaÅ‚kÃ³w pasujÄ…cych do ich Å›rodowiska i wyciÄ…ganie
+komponentÃ³w Å¼ innych repozytoriÃ³w z Internetu.
 
 %prep
 %setup -q
