@@ -1,5 +1,5 @@
 Summary:	Distributed software management system for Linux distributions
-Summary(pl.UTF-8):   Rozproszony system zarządzania oprogramowaniem dla dystrybucji Linuksa
+Summary(pl.UTF-8):	Rozproszony system zarządzania oprogramowaniem dla dystrybucji Linuksa
 Name:		conary
 Version:	0.62.14
 Release:	0.1
